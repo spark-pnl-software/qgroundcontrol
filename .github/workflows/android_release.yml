@@ -5,9 +5,7 @@ on:
   push:
     branches:
       - 'master'
-      - 'Stable*'
       - 'Stable_V4.4'
-
     tags:
       - 'v*'
     paths-ignore:
