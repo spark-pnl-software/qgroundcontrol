@@ -93,7 +93,7 @@ elseif(ANDROID)
         set(GSTREAMER_PREFIX_ANDROID $ENV{GSTREAMER_PREFIX_ANDROID})
     else()
         FetchContent_Declare(gstreamer
-            URL "https://gstreamer.freedesktop.org/data/pkg/android/${QGC_GST_TARGET_VERSION}/gstreamer-1.0-android-universal-${QGC_GST_TARGET_VERSION}.tar.xz"
+            URL "https://gstreamer.freedesktop.org/data/pkg/android/1.18.6/gstreamer-1.0-android-universal-1.18.6.tar.xz"
             DOWNLOAD_EXTRACT_TIMESTAMP true
         )
         FetchContent_MakeAvailable(gstreamer)
