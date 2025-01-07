@@ -33,7 +33,7 @@ if(ANDROID OR IOS)
     if(DEFINED ENV{GST_VERSION})
         set(QGC_GST_TARGET_VERSION $ENV{GST_VERSION} CACHE STRING "Environment Provided GStreamer Version")
     else()
-        set(QGC_GST_TARGET_VERSION 1.22.12 CACHE STRING "Requested GStreamer Version")
+        set(QGC_GST_TARGET_VERSION 1.18.6 CACHE STRING "Requested GStreamer Version")
     endif()
 endif()
 
