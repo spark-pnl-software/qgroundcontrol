@@ -60,7 +60,7 @@ Q_CONSTRUCTOR_FUNCTION(registerMetatypes)
 #define GST_PACKAGE_ORIGIN "Unknown package origin"
 #define GST_LICENSE        "LGPL"
 #define PACKAGE            "gst-plugins-bad (qmake)"
-#define PACKAGE_VERSION    "1.18.5"
+#define PACKAGE_VERSION    "1.18.6"
 #endif
 
 GST_PLUGIN_DEFINE (GST_VERSION_MAJOR,

@@ -33,7 +33,7 @@ jobs:
     env:
       ARTIFACT: QGroundControl.apk
       QT_VERSION: 6.6.3
-      GST_VERSION: 1.18.5
+      GST_VERSION: 1.18.6
       QT_ANDROID_KEYSTORE_PATH: ${{ github.workspace }}/deploy/android/keycd900.jks
       QT_ANDROID_KEYSTORE_ALIAS: keycd900
       QT_ANDROID_KEYSTORE_STORE_PASS: qwertyuiop

@@ -1,6 +1,6 @@
 find_package(GStreamer REQUIRED COMPONENTS Allocators Audio Codecparsers Controller Mpegts Net Pbutils Riff Rtp Rtsp Sdp Tag OPTIONAL_COMPONENTS Va Photography X11 EGL Wayland)
 
-# Use Latest Revisions for each minor version: 1.16.3, 1.18.5, 1.20.7, 1.22.12, 1.24.7
+# Use Latest Revisions for each minor version: 1.16.3, 1.18.6, 1.20.7, 1.22.12, 1.24.7
 string(REPLACE "." ";" GST_VERSION_LIST ${GStreamer_VERSION})
 list(GET GST_VERSION_LIST 0 GST_VERSION_MAJOR)
 list(GET GST_VERSION_LIST 1 GST_VERSION_MINOR)
@@ -22,7 +22,7 @@ endif()
 set(GST_PLUGINS_VERSION ${GST_VERSION_MAJOR}.${GST_VERSION_MINOR}.${GST_VERSION_PATCH})
 cmake_print_variables(GST_PLUGINS_VERSION)
 
-if(GStreamer_VERSION VERSION_GREATER_EQUAL 1.22)
+if(GStreamer_VERSION VERSION_GREATER_EQUAL 1.18)
     FetchContent_Declare(gstreamer_good_plugins
         # https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/${GST_PLUGINS_VERSION}/gstreamer-${GST_PLUGINS_VERSION}.zip?path=subprojects/gst-plugins-good/ext/qt6
         URL https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-${GST_PLUGINS_VERSION}.tar.xz
